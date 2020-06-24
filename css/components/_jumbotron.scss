@@ -1,57 +1,60 @@
 .jumbotron-me {
+  width: 100%;
+
+  @include tablet {
+    display: flex;
+    position: relative;
+  }
+
+  &_image {
     width: 100%;
+    overflow: hidden;
+    text-align: right;
+    margin-top: 50px;
 
     @include tablet {
-        display: flex;
-        position: relative;
+      position: absolute;
+      order: 2;
+      width: 70%;
+      top: 40px;
+      right: 0px;
+    }
+    @include desktop {
+      width: 55%;
     }
 
+    img {
+      width: 100%;
+      max-width: 600px;
+    }
+  }
 
-    &_image {
-        width: 100%;
-        overflow: hidden;
-        text-align: right;
-        margin-top: 50px;
+  &_content {
+    padding: 20px;
+    font-weight: bold;
 
-        @include tablet {
-            position: absolute;
-            order: 2;
-            width: 60%;
-            top: 40px;
-            right: 0px;
-        }
-
-        img {
-            width: 100%;
-            max-width: 600px;
-        }
+    @include tablet {
+      order: 1;
+      margin-top: 140px;
+      width: 60%;
+      padding: 2.3rem;
     }
 
-    &_content {
-        padding: 20px;
-        font-family: 'Gabriela', serif;
-        font-weight: bold;
-
-        @include tablet {
-            order: 1;
-            margin-top: 140px;
-            width: 60%;
-            padding: 2.3rem;
-        }
-
-        @include desktop {
-            padding: 5rem 6rem;
-        }
-
-        &_title {
-            @include tablet {
-                font-size: 6vw !important;
-            }
-        }
-
-        &_cta {
-            @include button()
-        }
-
+    @include desktop {
+      padding: 5rem 6rem;
     }
+
+    &_title {
+      font-family: $primaryFont;
+
+      @include tablet {
+        font-size: 6vw !important;
+      }
+    }
+
+    &_cta {
+      font-family: $secondaryFont;
+      @include button();
+    }
+  }
 }

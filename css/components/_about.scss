@@ -1,0 +1,21 @@
+.about-me {
+  width: 100%;
+  font-family: $primaryFont;
+  text-align: center;
+  margin-top: 80px;
+
+  @include tablet {
+    font-size: 4vw !important;
+    position: relative;
+  }
+}
+.about-me_content {
+  width: 100%;
+  font-size: 18px !important;
+  text-align: center;
+  @include tablet {
+    width: 70%;
+    padding: 20px;
+    margin-top: 25px;
+  }
+}

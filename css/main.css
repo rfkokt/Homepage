@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gabriela&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,700;0,800;1,400&display=swap");
 ul {
   list-style-type: none;
   padding: 0;
@@ -81,9 +82,15 @@ a {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    width: 60%;
+    width: 70%;
     top: 40px;
     right: 0px;
+  }
+}
+
+@media (min-width: 992px) {
+  .jumbotron-me_image {
+    width: 55%;
   }
 }
 
@@ -94,7 +101,6 @@ a {
 
 .jumbotron-me_content {
   padding: 20px;
-  font-family: 'Gabriela', serif;
   font-weight: bold;
 }
 
@@ -115,6 +121,10 @@ a {
   }
 }
 
+.jumbotron-me_content_title {
+  font-family: "Gabriela", serif;
+}
+
 @media (min-width: 768px) {
   .jumbotron-me_content_title {
     font-size: 6vw !important;
@@ -122,6 +132,7 @@ a {
 }
 
 .jumbotron-me_content_cta {
+  font-family: "Nunito Sans", sans-serif;
   background: -webkit-gradient(linear, left top, right top, from(#8c32f0), to(#e73587));
   background: linear-gradient(90deg, #8c32f0 0%, #e73587 100%);
   color: white;
@@ -132,6 +143,34 @@ a {
   text-align: center;
   margin: 5px 2px;
   padding: 10px 15px;
+}
+
+.about-me {
+  width: 100%;
+  font-family: "Gabriela", serif;
+  text-align: center;
+  margin-top: 80px;
+}
+
+@media (min-width: 768px) {
+  .about-me {
+    font-size: 4vw !important;
+    position: relative;
+  }
+}
+
+.about-me_content {
+  width: 100%;
+  font-size: 18px !important;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .about-me_content {
+    width: 70%;
+    padding: 20px;
+    margin-top: 25px;
+  }
 }
 
 header {
@@ -257,7 +296,7 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: "Poppins", sans-serif !important;
   margin: 0;
 }
 /*# sourceMappingURL=main.css.map */
