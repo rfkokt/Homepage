@@ -1,13 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gabriela&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,700;0,800;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap");
 ul {
   list-style-type: none;
   padding: 0;
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .menusamping {
@@ -82,7 +83,7 @@ a {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    width: 70%;
+    width: 50%;
     top: 40px;
     right: 0px;
   }
@@ -123,6 +124,7 @@ a {
 
 .jumbotron-me_content_title {
   font-family: "Gabriela", serif;
+  margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {
@@ -145,7 +147,20 @@ a {
   padding: 10px 15px;
 }
 
-.about-me {
+.jumbotron-me_content_cta:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#8c32f0), to(#e73587));
+  background: linear-gradient(90deg, #8c32f0 0%, #e73587 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  margin: 5px 2px;
+  padding: 15px 20px;
+}
+
+.about-me_title {
   width: 100%;
   font-family: "Gabriela", serif;
   text-align: center;
@@ -153,7 +168,7 @@ a {
 }
 
 @media (min-width: 768px) {
-  .about-me {
+  .about-me_title {
     font-size: 4vw !important;
     position: relative;
   }
@@ -161,16 +176,85 @@ a {
 
 .about-me_content {
   width: 100%;
-  font-size: 18px !important;
   text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #2b2b2b;
+}
+
+@media (min-width: 768px) {
+  .about-me_content::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 230px;
+    top: 640px;
+    left: -135px;
+    height: 230px;
+    background: #F0F3FA;
+    z-index: -2;
+  }
 }
 
 @media (min-width: 768px) {
   .about-me_content {
-    width: 70%;
-    padding: 20px;
-    margin-top: 25px;
+    width: 75% !important;
   }
+}
+
+.service-me {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.service-me_title {
+  width: 100%;
+  font-family: "Gabriela", serif;
+  text-align: center;
+  margin-top: 80px;
+}
+
+@media (min-width: 768px) {
+  .service-me_title {
+    font-size: 4vw !important;
+    position: relative;
+  }
+}
+
+.service-me_background {
+  margin-top: 30px;
+  text-align: center;
+  padding: 30px;
+}
+
+@media (min-width: 576px) {
+  .service-me_background {
+    margin-left: 10px;
+    max-width: 31.4% !important;
+  }
+}
+
+.service-me_background_image {
+  width: 100%;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .service-me_background_image {
+    max-width: 400px;
+    margin-right: 40px;
+  }
+}
+
+.service-me_background_image img {
+  width: 100%;
+}
+
+.service-me_background_title {
+  font-size: 1em;
+  font-weight: 700;
 }
 
 header {
@@ -225,6 +309,11 @@ header .nav-me_brand_logo {
   font-size: 30px;
   font-weight: bold;
   margin: 10px 10px;
+}
+
+header .nav-me_brand_logo span {
+  color: #020e35;
+  font-family: 'Inter' !important;
 }
 
 header .nav-me_list {
@@ -298,5 +387,22 @@ html {
 body {
   font-family: "Poppins", sans-serif !important;
   margin: 0;
+}
+
+.container-me {
+  width: 95%;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .container-me {
+    width: 90%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container-me {
+    width: 85%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

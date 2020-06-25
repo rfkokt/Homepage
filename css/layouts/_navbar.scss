@@ -30,6 +30,11 @@ header {
 
             &_logo {
                 @include logo();
+
+                span {
+                    color: $secondaryBackground;
+                    font-family: 'Inter' !important;
+                }
             }
 
         }

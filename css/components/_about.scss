@@ -1,21 +1,35 @@
 .about-me {
-  width: 100%;
-  font-family: $primaryFont;
-  text-align: center;
-  margin-top: 80px;
+  &_title {
 
-  @include tablet {
-    font-size: 4vw !important;
-    position: relative;
+    @include title();
+
   }
-}
-.about-me_content {
-  width: 100%;
-  font-size: 18px !important;
-  text-align: center;
-  @include tablet {
-    width: 70%;
-    padding: 20px;
-    margin-top: 25px;
+
+
+
+  &_content {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+
+    &::after {
+      @include tablet {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        width: 230px;
+        top: 640px;
+        left: -135px;
+        height: 230px;
+        background: #F0F3FA;
+        z-index: -2;
+      }
+    }
+
+    @include tablet {
+      width: 75% !important;
+    }
+
+    color: #2b2b2b;
   }
 }
