@@ -1,41 +1,50 @@
 .service-me {
-    justify-content: center;
+  justify-content: center;
 
+  &_title {
+    @include title();
+  }
+
+  &_background {
+    margin-top: 30px;
+    text-align: center;
+    padding: 2rem;
+    box-sizing: border-box;
+    position: relative;
+    transition: 0.4 ease;
+    width: 100%;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1),
+      0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1),
+      0 16px 16px rgba(0, 0, 0, 0.1);
+
+    @include small {
+      margin-left: 10px;
+      max-width: 31.4% !important;
+    }
+
+    &_image {
+      width: 100%;
+      overflow: hidden;
+
+      @include tablet {
+        max-width: 400px;
+        margin-right: 40px;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
 
     &_title {
-        @include title();
+      font-size: 1em;
+      font-weight: 700;
+
+      p {
+        margin: 20px 0px;
+        font-size: 0.8em;
+        font-weight: 200;
+      }
     }
-
-    &_background {
-        margin-top: 30px;
-        text-align: center;
-        padding: 30px;
-
-        @include small {
-            margin-left: 10px;
-            max-width: 31.4% !important;
-
-        }
-
-        &_image {
-            width: 100%;
-            overflow: hidden;
-
-            @include tablet {
-                max-width: 400px;
-                margin-right: 40px;
-            }
-
-            img {
-                width: 100%;
-            }
-        }
-
-        &_title {
-            font-size: 1em;
-            font-weight: 700;
-
-        }
-    }
-
+  }
 }

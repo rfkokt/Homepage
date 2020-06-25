@@ -192,7 +192,7 @@ a {
     top: 640px;
     left: -135px;
     height: 230px;
-    background: #F0F3FA;
+    background: #f0f3fa;
     z-index: -2;
   }
 }
@@ -226,7 +226,15 @@ a {
 .service-me_background {
   margin-top: 30px;
   text-align: center;
-  padding: 30px;
+  padding: 2rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  -webkit-transition: 0.4 ease;
+  transition: 0.4 ease;
+  width: 100%;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 576px) {
@@ -255,6 +263,39 @@ a {
 .service-me_background_title {
   font-size: 1em;
   font-weight: 700;
+}
+
+.service-me_background_title p {
+  margin: 20px 0px;
+  font-size: 0.8em;
+  font-weight: 200;
+}
+
+.btn-me {
+  font-family: "Nunito Sans", sans-serif;
+  background: -webkit-gradient(linear, left top, right top, from(#8c32f0), to(#e73587));
+  background: linear-gradient(90deg, #8c32f0 0%, #e73587 100%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  margin: 5px 2px;
+  padding: 10px 15px;
+}
+
+.btn-me:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#8c32f0), to(#e73587));
+  background: linear-gradient(90deg, #8c32f0 0%, #e73587 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  margin: 5px 2px;
+  padding: 15px 20px;
 }
 
 header {
@@ -313,7 +354,7 @@ header .nav-me_brand_logo {
 
 header .nav-me_brand_logo span {
   color: #020e35;
-  font-family: 'Inter' !important;
+  font-family: "Inter" !important;
 }
 
 header .nav-me_list {
@@ -327,7 +368,7 @@ header .nav-me_list {
   }
 }
 
-header.scrollerd {
+header.scrolled {
   background: white;
   -webkit-box-shadow: 0px 10px 40px rgba(194, 194, 194, 0.4);
           box-shadow: 0px 10px 40px rgba(194, 194, 194, 0.4);
